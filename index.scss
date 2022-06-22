@@ -1,0 +1,107 @@
+* {margin: 0; padding: 0; box-sizing:border-box; outline: 0px; border: 0px;}
+
+.container, .containerGrid{margin: auto;
+    // background-color: rgba(173, 216, 230, 0.6);
+}
+
+html{font-size: 16px;}
+
+body{background: url(./images/img1.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;}
+
+header{display: flex; justify-content: center;}
+
+nav{
+    height: 100px; width: 100vw; font-size: 1em; background: #222327; color: #fff; padding: 0 100px;
+    position: fixed;
+
+    h1{font-size: 40px; position: absolute; user-select: none;}
+
+    li{padding-left: 16px; white-space: nowrap; position: absolute;}
+
+    input{width: 100px; position: absolute;}
+
+    button{background-color: #232392; color: #fff; padding: 5px 10px; position: absolute;} 
+
+    button.btnCreeazaArticol{ display: none;}     
+
+    // button.btnCreeazaArticol:hover{font-size: 18px; background-color: #4848cc; }  
+    // button.btnDeconectare:hover{font-size: 18px; background-color: #4848cc; margin-right: -45px; margin-left: -15px;}  
+    // button.btnConectare:hover{ margin: 0 -15px 0 -14px; font-size: 18px; background-color: #4848cc;}
+    // button.btnContact:hover{ margin: 0 -12px 0 -10.24px; font-size: 18px; background-color: #4848cc;}
+
+}
+
+main{
+    padding-top: 100px;
+
+    div.container{
+        display: flex; flex-direction: column; align-items: center;
+
+        article{margin-bottom: 20px; width: 50vw;}
+    }
+
+    div.containerGrid{
+        display: grid; gap: 50px; grid-template-columns: auto auto auto; justify-content: center;
+
+        article{width: 20vw;}
+    }
+    
+    input{width: 20vw; display: block; font-size: 20px; margin: 0 auto; margin-bottom: 20px;  margin-top: 20px;}
+
+    article{
+        background-color: #fff; text-align: justify;
+    }
+
+    article div{display: flex; justify-content: space-between;}
+
+    i{color: red; cursor: pointer; font-weight: 800; display: none;}
+}
+
+section.sectionAdaugaArticol{
+    width: 60vw; height: 60vh; background-color: #222327; text-align: center;
+    position: fixed; z-index: 5; left: 20vw; top: 20vh; border-radius: 10px; box-shadow: 3px 3px 10px;
+}
+
+.sectionAdaugaArticol{
+    display: none; flex-direction: column; align-items: center;
+
+    .btnAdaugaArticol{
+        background-color: #232392; color: #fff; padding: 5px 10px; border-radius: 5px; margin-top: 5vh;
+        position: absolute;
+    }
+    // .btnAdaugaArticol:hover{ font-size: 18px; background-color: #4848cc; margin-bottom: -6px;}
+
+    .btnXsection{
+        background-color: #232392; color: #fff; padding: 5px 10px; border-radius: 5px; 
+        position: absolute; top: 1vh; right: 0.5vw;
+    }
+    //.btnXsection:hover{background-color: #4848cc;}
+
+    input{width: 30vw; height: 30px; margin-top: 12vh; font-size: 20px; border-radius: 5px;}
+    textarea{resize: none; margin-top: 5vh; width: 40vw; height: 30vh; border-radius: 5px;}
+}
+
+section.caseta{
+    width: 250px; height: 70vh; background-color: darkgrey; z-index: 22; 
+    position: fixed; left: 0; top: 20vh; display: none; overflow-x:hidden;
+
+    label{display: block; text-transform: uppercase; color: black; text-align: center; margin-top: 10px;  margin-bottom: 5px; font-size: 18px;}
+
+    select, input{display: block; width: 90%; margin: 0 auto; margin-bottom: 5px; font-size: 18px; border-radius: 50px; text-align: center;}
+
+    input[type="color"]{border-radius: 1px;}
+
+    div#pozitionareElement{
+        position: relative; left: 40px; margin-bottom: 120px; margin-top: 10px;
+
+        div.punctPozitie{
+            display: flex; justify-content: center; align-items: center; position: absolute;
+            width: 30px; height: 30px; color: #fff; background-color: #4848cc; border-radius: 50%; cursor: pointer; user-select: none;
+        }
+
+        div#sus{left: 60px; top: 0px}
+        div#jos{left: 60px; top: 60px;}
+        div#stanga{left: 30px; top: 30px;}
+        div#dreapta{left: 90px; top: 30px}
+    }
+}

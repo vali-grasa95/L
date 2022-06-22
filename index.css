@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 0px;
+  border: 0px;
+}
+
+.container, .containerGrid {
+  margin: auto;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: url(./images/img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav {
+  height: 100px;
+  width: 100vw;
+  font-size: 1em;
+  background: #222327;
+  color: #fff;
+  padding: 0 100px;
+  position: fixed;
+}
+
+nav h1 {
+  font-size: 40px;
+  position: absolute;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+nav li {
+  padding-left: 16px;
+  white-space: nowrap;
+  position: absolute;
+}
+
+nav input {
+  width: 100px;
+  position: absolute;
+}
+
+nav button {
+  background-color: #232392;
+  color: #fff;
+  padding: 5px 10px;
+  position: absolute;
+}
+
+nav button.btnCreeazaArticol {
+  display: none;
+}
+
+main {
+  padding-top: 100px;
+}
+
+main div.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main div.container article {
+  margin-bottom: 20px;
+  width: 50vw;
+}
+
+main div.containerGrid {
+  display: -ms-grid;
+  display: grid;
+  gap: 50px;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main div.containerGrid article {
+  width: 20vw;
+}
+
+main input {
+  width: 20vw;
+  display: block;
+  font-size: 20px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+main article {
+  background-color: #fff;
+  text-align: justify;
+}
+
+main article div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main i {
+  color: red;
+  cursor: pointer;
+  font-weight: 800;
+  display: none;
+}
+
+section.sectionAdaugaArticol {
+  width: 60vw;
+  height: 60vh;
+  background-color: #222327;
+  text-align: center;
+  position: fixed;
+  z-index: 5;
+  left: 20vw;
+  top: 20vh;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 10px;
+          box-shadow: 3px 3px 10px;
+}
+
+.sectionAdaugaArticol {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sectionAdaugaArticol .btnAdaugaArticol {
+  background-color: #232392;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 5vh;
+  position: absolute;
+}
+
+.sectionAdaugaArticol .btnXsection {
+  background-color: #232392;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 1vh;
+  right: 0.5vw;
+}
+
+.sectionAdaugaArticol input {
+  width: 30vw;
+  height: 30px;
+  margin-top: 12vh;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.sectionAdaugaArticol textarea {
+  resize: none;
+  margin-top: 5vh;
+  width: 40vw;
+  height: 30vh;
+  border-radius: 5px;
+}
+
+section.caseta {
+  width: 250px;
+  height: 70vh;
+  background-color: darkgrey;
+  z-index: 22;
+  position: fixed;
+  left: 0;
+  top: 20vh;
+  display: none;
+  overflow-x: hidden;
+}
+
+section.caseta label {
+  display: block;
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+section.caseta select, section.caseta input {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  font-size: 18px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+section.caseta input[type="color"] {
+  border-radius: 1px;
+}
+
+section.caseta div#pozitionareElement {
+  position: relative;
+  left: 40px;
+  margin-bottom: 120px;
+  margin-top: 10px;
+}
+
+section.caseta div#pozitionareElement div.punctPozitie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  background-color: #4848cc;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+section.caseta div#pozitionareElement div#sus {
+  left: 60px;
+  top: 0px;
+}
+
+section.caseta div#pozitionareElement div#jos {
+  left: 60px;
+  top: 60px;
+}
+
+section.caseta div#pozitionareElement div#stanga {
+  left: 30px;
+  top: 30px;
+}
+
+section.caseta div#pozitionareElement div#dreapta {
+  left: 90px;
+  top: 30px;
+}
+/*# sourceMappingURL=index.css.map */
